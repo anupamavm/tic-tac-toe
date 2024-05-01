@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<h1 id="main-heading">Tic Tac Toe</h1>
+
+<div class="player-info" id="player-info">
+    <p id="userCont" class="user-info">You: <span id="user"></span></p>
+    <p id="oppNameCont"  class="opp-info">Opponent: <span id="oppName"></span></p>
+</div>
+
+<p id="valueCont" class="value-info">You are playing as <span id="value"></span></p>
+<p class="turn-info" id="whosTurn"></p>
+
+<div class="input-section">
+    <p id="enterName" class="enter-name">Enter your Name</p>
+    <input id="name" type="text" placeholder="Name" autocapitalize="off">
+    <button id="find" class="search-button">Search for a player</button>
+    <img src="loading.gif" id="loading" alt="Loading...">
+</div>
+
+<div id="bigCont">
+    <div id="cont">
+        <button id="btn1" class="btn"></button>
+        <button id="btn2" class="btn"></button>
+        <button id="btn3" class="btn"></button>
+        <button id="btn4" class="btn"></button>
+        <button id="btn5" class="btn"></button>
+        <button id="btn6" class="btn"></button>
+        <button id="btn7" class="btn"></button>
+        <button id="btn8" class="btn"></button>
+        <button id="btn9" class="btn"></button>
+    </div>
+</div>
+
+<!-- Import Socket.IO library -->
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- Import client-side JavaScript file -->
+<script src="client.js"></script>
+
+</body>
+</html>
